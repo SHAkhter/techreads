@@ -13,6 +13,22 @@
 				<li><c:out value="${book.title}" /></li>
 			</c:forEach>
 		</ul>
+		
+		<ul>
+			<c:forEach var="book" items="${books}">
+				<li><c:out value="${book.author}" /></li>
+			</c:forEach>
+		</ul>
+		
+		<ul>
+				<c:forEach var="book" items="${books}">
+					<li><c:out value="${book.rating}" /></li>
+				</c:forEach>
+			
+		</ul>
+		
+		
+		
 	</c:if>
 
 </body>

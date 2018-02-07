@@ -13,12 +13,26 @@ public class Book {
 	
 	Long id;
 	String title;
+	String author;
+	String rating;
+	
 
+	//constructor
 	public Book() {
 	}
 
-	public Book(String title) {
+	public Book(String title, String author, String rating) {
 		this.title = title;
+		this.author = author;
+		this.rating = rating;
+	}
+
+	public String getRating() {
+		return rating;
+	}
+
+	public void setRating(String rating) {
+		this.rating = rating;
 	}
 
 	public Long getId() {
@@ -35,6 +49,14 @@ public class Book {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+	
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 
 }
