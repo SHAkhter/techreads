@@ -15,16 +15,45 @@ public class Book {
 	String title;
 	String author;
 	String rating;
-	
+	String status;
+	String imgUrl;
+	String dateAdded;
 
 	//constructor
 	public Book() {
 	}
 
-	public Book(String title, String author, String rating) {
+	public Book(String title, String author, String rating, String status, String imgUrl, String dateAdded) {
+		this.status = status;
 		this.title = title;
 		this.author = author;
 		this.rating = rating;
+		this.imgUrl = imgUrl;
+		this.dateAdded = dateAdded;
+	}
+
+	public String getDateAdded() {
+		return dateAdded;
+	}
+
+	public void setDateAdded(String dateAdded) {
+		this.dateAdded = dateAdded;
+	}
+
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getRating() {
